@@ -27,3 +27,12 @@ createBtnLink.addEventListener("click", createBtnHandler);
 // createBtnLink.addEventListener("click", createBtnHandlerAlternative);
 
 // 3. “Лампочка”. У розмітці прописати елемент (article або div), з початковими стилями, які роблять елемент круглим, сірого кольору тла, з темно-сірою рамкою. Також прописати в розмітці кнопку, за натиснення на яку у елемента-лампочки мають змінитись стилі - тло має стати жовтим, рамка - білою.
+
+const lightbulb = document.querySelector("#lightbulb");
+const toggleLightBtn = document.querySelector("#toggleLightBtn");
+
+function toggleLightHandler(e) {
+  lightbulb.classList.toggle("bulb-on");
+}
+
+toggleLightBtn.addEventListener("click", toggleLightHandler);
